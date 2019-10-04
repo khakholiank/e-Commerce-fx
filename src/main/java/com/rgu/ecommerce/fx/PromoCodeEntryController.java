@@ -51,7 +51,7 @@ public class PromoCodeEntryController implements Initializable {
         PromoCode pc = new PromoCode();
         if(validateFields()){
             pc.setCode(code.getText());
-            pc.setAmount(Double.parseDouble(code.getText()));
+            pc.setAmount(Double.parseDouble(amount.getText()));
             pc.setType(type.getValue());
         }
         return pc;
@@ -60,7 +60,7 @@ public class PromoCodeEntryController implements Initializable {
 
     @FXML
     private void saveAction(ActionEvent event) {
-        PromoCode pc = new PromoCode();
+        PromoCode pc = getValueFromFields();
         if(pc!=null){
             NetworkService.getInstance().getJSONApi().addPromoCode(pc).enqueue(new Callback<PromoCode>() {
                 @Override

@@ -40,6 +40,9 @@ public class StockEntryController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         hub.getItems().add("1234567890");
         units.getItems().setAll(UnitType.values());
+        
+        loadProducts();
+        loadSellers();
     }    
 
     private boolean validateFieds(){
@@ -121,6 +124,7 @@ public class StockEntryController implements Initializable {
             public void onResponse(Call<List<User>> call, Response<List<User>> rspns) {
                 if(rspns.isSuccessful()){
                     Platform.runLater(()-> seller.getItems().setAll(rspns.body()));
+                    System.out.println(rspns.body());
                 }
             }
 

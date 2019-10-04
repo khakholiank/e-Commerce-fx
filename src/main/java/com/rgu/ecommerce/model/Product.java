@@ -51,6 +51,12 @@ public class Product {
     public void setImgMediaId(int imgMediaId) {
         this.imgMediaId = imgMediaId;
     }
+
+    @Override
+    public String toString() {
+        return getNameOfItem(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
     
     
     

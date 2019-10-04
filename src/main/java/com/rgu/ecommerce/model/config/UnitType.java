@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.rgu.ecommerce.model.config;
 
 /**
@@ -11,7 +7,6 @@ package com.rgu.ecommerce.model.config;
  */
 public enum UnitType {
     Hrs(0),Min(1),Rs(2), Sec(3);
-    
     
     private final int code;
     private UnitType(int code){

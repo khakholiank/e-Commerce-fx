@@ -3,6 +3,7 @@ package com.rgu.ecommerce.fx;
 
 import com.rgu.ecommerce.model.Product;
 import com.rgu.ecommerce.rest.NetworkService;
+import com.sdigitizers.fx.utils.FXUtils;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -66,7 +67,8 @@ public class ProductManagerController implements Initializable {
     }
 
     @FXML
-    private void addAction(ActionEvent event) {
+    private void addAction() {
+        FXUtils.openStageWithFadeAnimation(Fxml.PRODUCT_ENTRY);
     }
 
     @FXML
