@@ -26,6 +26,10 @@ public class DashboardController implements Initializable {
         tabPane.getTabs().get(0).setContent(FXUtils.loadScene(Fxml.PRODUCT_MANAGER));
         tabPane.getTabs().get(1).setContent(FXUtils.loadScene(Fxml.STOCK_MANAGER));
         tabPane.getTabs().get(2).setContent(FXUtils.loadScene(Fxml.PROMOCODE_MANAGER));
+        tabPane.getTabs().get(3).setContent(FXUtils.loadScene(Fxml.USER_MANAGER));
+        tabPane.getTabs().get(4).setContent(FXUtils.loadScene(Fxml.ORDER_MANAGER));
+        tabPane.getTabs().get(5).setContent(FXUtils.loadScene(Fxml.DELIVERY_TIME_MANAGER));
+        
     }    
     
 }

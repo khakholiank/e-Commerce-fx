@@ -71,6 +71,7 @@ public class PromoCodeManagerController implements Initializable {
     @FXML
     private void addAction(ActionEvent event) {
         FXUtils.openStageWithFadeAnimation(Fxml.PROMOCODE_ENTRY);
+        refreshAction();
     }
 
     @FXML

@@ -163,6 +163,69 @@ public enum Fxml implements FxmlView{
         public String getCssFile() {
             return "";
         }
+    },
+    DELIVERY_TIME_MANAGER{
+        @Override
+        public String getTitle() {
+            return "DELIVERY TIME MANAGER";
+        }
+
+        @Override
+        public StageStyle getStageStyle() {
+            return StageStyle.DECORATED;
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/fxml/DeliveryTimeManager.fxml";
+        }
+        
+        @Override
+        public String getCssFile() {
+            return "";
+        }
+    },
+    USER_MANAGER{
+        @Override
+        public String getTitle() {
+            return "USER MANAGER";
+        }
+
+        @Override
+        public StageStyle getStageStyle() {
+            return StageStyle.DECORATED;
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/fxml/UserManager.fxml";
+        }
+        
+        @Override
+        public String getCssFile() {
+            return "";
+        }
+    },
+    ORDER_MANAGER{
+        @Override
+        public String getTitle() {
+            return "ORDER MANAGER";
+        }
+
+        @Override
+        public StageStyle getStageStyle() {
+            return StageStyle.DECORATED;
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/fxml/OrderManager.fxml";
+        }
+        
+        @Override
+        public String getCssFile() {
+            return "";
+        }
     }
     
 }

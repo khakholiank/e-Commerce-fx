@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2C3335;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgu.ecommerce.fx.DashboardController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgu.ecommerce.fx.DashboardController">
    <children>
-      <Label layoutX="14.0" layoutY="42.0" text="e-Commere Admin Panel" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="42.0">
+      <Label layoutX="14.0" layoutY="42.0" text="e-Commere Admin Panel" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="42.0">
          <font>
             <Font size="40.0" />
          </font>
       </Label>
-      <JFXTabPane fx:id="tabPane" layoutX="295.0" layoutY="200.0" side="BOTTOM" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0">
+      <JFXTabPane fx:id="tabPane" layoutX="295.0" layoutY="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0">
          <tabs>
             <Tab text="Products">
               <content>
@@ -33,6 +33,16 @@
             <Tab text="Users">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;" />
+              </content>
+            </Tab>
+            <Tab text="Orders">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Delivery Time">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
               </content>
             </Tab>
          </tabs>

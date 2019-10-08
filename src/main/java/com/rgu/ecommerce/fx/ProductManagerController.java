@@ -47,6 +47,9 @@ public class ProductManagerController implements Initializable {
         clm4.setCellValueFactory((d)-> new SimpleStringProperty(d.getValue().getTags()));
         clm5.setCellValueFactory((d)-> new SimpleStringProperty(d.getValue().getImgMediaId()+""));
         
+        
+        refreshAction();
+        
     }    
     
     
@@ -69,6 +72,7 @@ public class ProductManagerController implements Initializable {
     @FXML
     private void addAction() {
         FXUtils.openStageWithFadeAnimation(Fxml.PRODUCT_ENTRY);
+        refreshAction();
     }
 
     @FXML

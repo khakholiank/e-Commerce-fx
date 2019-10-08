@@ -75,6 +75,7 @@ public class StockManagerController implements Initializable {
     @FXML
     private void addAction(ActionEvent event) {
         FXUtils.openStageWithFadeAnimation(Fxml.STOCK_ENTRY);
+        refreshAction();
     }
 
     @FXML
