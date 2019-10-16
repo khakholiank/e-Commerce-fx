@@ -34,6 +34,7 @@ public class ProductManagerController implements Initializable {
     @FXML private TableColumn<Product, String> clm4;
     @FXML private TableColumn<Product, String> clm5;
     
+   
     
     private final ObservableList<Product> DATA = FXCollections.observableArrayList();
 

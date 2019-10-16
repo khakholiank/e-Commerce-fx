@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkService {
     private static NetworkService mInstance;
-    private static final String BASE_URL="http://localhost:8085";
+    private static final String BASE_URL="http://localhost:8089/";
 
 
     private Retrofit mRetrofit;
@@ -35,5 +35,4 @@ public class NetworkService {
     public SDMangaerApi getJSONApi() {
         return mRetrofit.create(SDMangaerApi.class);
     }
-
 }
